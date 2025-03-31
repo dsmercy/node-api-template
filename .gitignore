@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+log*/
+
+# Jest Coverage Reports
+coverage/
+
+# IDE Specific
+.vscode/
+.idea/
+*.swp
+
+# OS Specific
+.DS_Store
+Thumbs.db

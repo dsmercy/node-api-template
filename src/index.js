@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const itemRoutes = require("./routes/itemRoutes");
+const routes = require("./routes/commonRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Routes
-app.use("/api/items", itemRoutes);
+app.use("/api", routes);
 
 // Start Server
 if (require.main === module) {

@@ -3,10 +3,11 @@ const { createItem, getItems, getItemById, updateItem, deleteItem } = require(".
 
 const router = express.Router();
 
-router.post("/", createItem);
-router.get("/", getItems);
-router.get("/:id", getItemById);
-router.put("/:id", updateItem);
-router.delete("/:id", deleteItem);
+///item routes
+router.post("/items/", createItem);
+router.get("/items/", getItems);
+router.get("/items/:id", getItemById);
+router.put("/items/:id", updateItem);
+router.delete("/items/:id", deleteItem);
 
 module.exports = router;
